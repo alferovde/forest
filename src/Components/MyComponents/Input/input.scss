@@ -1,0 +1,12 @@
+.my_input {
+  width: 350px;
+  height: 45px;
+  border: 1px solid #899d9d;
+  padding-left: 16px;
+  box-sizing: border-box;
+  outline: none;
+
+  &::placeholder {
+    font-size: 16px;
+  }
+}

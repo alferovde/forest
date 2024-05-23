@@ -1,0 +1,82 @@
+.hero {
+  height: 510px;
+  background-image: url("../../Images/hero_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #3d3d3d6c;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  padding-top: 115px;
+  box-sizing: border-box;
+
+  .hero__wrapper {
+    .hero__title {
+      font-size: 60px;
+      font-weight: 500;
+      font-family: "Cormorant", "arial";
+      max-width: 688px;
+      line-height: 100%;
+    }
+
+    .hero__text {
+      font-size: 16px;
+      max-width: 635px;
+      line-height: 150%;
+      font-family: "Open Sans";
+      margin-bottom: 24px;
+      margin-top: 16px;
+    }
+
+    .hero__link {
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 330px;
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    .hero__title {
+      padding-bottom: 30px;
+    }
+    .hero__text {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 300px;
+    padding-top: 45px;
+
+    .hero__wrapper {
+      .hero__title {
+        max-width: 256px;
+        font-size: 48px;
+        padding-bottom: 30px;
+        margin: 0 auto;
+      }
+      .hero__text {
+        display: none;
+      }
+    }
+  }
+}

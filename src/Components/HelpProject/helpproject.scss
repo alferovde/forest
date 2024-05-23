@@ -1,0 +1,75 @@
+.help-project {
+  height: 463px;
+  background-image: url("../../Images/help_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+  box-sizing: border-box;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #899d9d7c;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-family: "Cormorant", "arial";
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: "Open Sans", "arial";
+    line-height: 150%;
+    max-width: 825px;
+    margin-bottom: 24px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      margin-bottom: 24px;
+    }
+    button {
+      background-color: #bae249;
+      color: #0b1919;
+      font-weight: 700;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .help-project {
+    padding-top: 30px;
+    height: 550px;
+  }
+}
+@media (max-width: 600px) {
+  .help-project {
+    padding-top: 30px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  .help-project {
+    padding-top: 30px;
+    height: 320px;
+
+    p {
+      display: none;
+    }
+  }
+}

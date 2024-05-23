@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
+import Footer from "./Components/Footer/Footer";
+import WebFont from "webfontloader";
+import { useEffect, useState } from "react";
+import "./main.scss";
+import SliderSection from "./Components/SliderSection/SliderSection";
+import Artefacts from "./Components/Artefacts/Artefacts";
+import HelpProject from "./Components/HelpProject/HelpProject";
+import "animate.css";
 function App() {
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ["Cormorant", "Open Sans"],
+      },
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="mainsection">
+      <Header />
+      <Hero />
+      <SliderSection />
+      <Artefacts />
+      <HelpProject />
+      <Footer />
+    </main>
   );
 }
 

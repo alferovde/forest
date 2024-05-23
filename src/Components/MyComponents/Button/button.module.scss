@@ -1,0 +1,37 @@
+.button_style {
+  background-color: transparent;
+  width: 145px;
+  height: 45px;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: "Open Sans";
+  border: 1px solid #bae249;
+  color: #bae249;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:hover:enabled {
+    background-color: #bae249;
+    color: #0b1919;
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 1px double #bae249;
+    color: #bae249;
+
+    box-shadow: 0 0 0 0px white, 0 0 0 2px #83a440;
+  }
+
+  &:active:enabled {
+    background-color: #688b05;
+    border: none;
+    box-shadow: none;
+    color: #0b1919;
+  }
+
+  &:disabled {
+    color: #899d9d;
+    border: 1px double #899d9d;
+  }
+}

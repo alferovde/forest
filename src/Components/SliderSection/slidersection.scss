@@ -1,0 +1,110 @@
+.slidersection {
+  height: 555px+60px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  .slide__item {
+    max-width: 255px;
+    height: 493px;
+    border: 1px solid #0b1919;
+    margin-right: 30px;
+    position: relative;
+    .slider__img {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #0b1919;
+      position: relative;
+
+      .img__circle {
+        position: absolute;
+        top: 16px;
+        left: 19px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #899d9d;
+        color: #899d9d;
+        font-size: 16px;
+        font-family: "Cormorant", "arial";
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    .slider__info {
+      padding: 16px;
+      box-sizing: border-box;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Cormorant", "arial";
+        margin: 0;
+        margin-bottom: 8px;
+        color: white;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: "Open Sans", "arial";
+        line-height: 150%;
+        color: #899d9d;
+      }
+
+      button {
+        position: absolute;
+        bottom: 24px;
+        left: 15px;
+      }
+    }
+  }
+
+  .slider__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26px;
+    font-family: "Cormorant", "arial";
+    font-size: 24px;
+    span {
+      margin-left: 0px;
+      margin-right: 5px;
+      font-size: 24px;
+    }
+
+    .carousel__dot {
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-family: "Cormorant", "arial";
+      font-size: 24px;
+      display: none;
+    }
+
+    .carousel__dot--selected {
+      display: flex;
+      font-size: 24px;
+    }
+
+    .arrow_left,
+    .arrow_right {
+      background-color: transparent;
+      border: none;
+      display: block !important;
+      margin-left: 15px;
+
+      &:active {
+        background-color: transparent;
+        border: none;
+        display: block !important;
+      }
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//   .slidersection {
+//     background-color: #fff;
+//   }
+// }
